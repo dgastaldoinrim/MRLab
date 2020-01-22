@@ -7,7 +7,7 @@ class Errors(Exception):
     """
     pass
 
-    def error_handler(self):
+    def warning_handler(self):
         """
         This function is used to properly handle an ERROR exception, printing all the informations necessary to the users (including the eventual PyVISA
         internal error number and message). After having done this, it prints also the error traceback and stops script execution calling sys.exit() method.
@@ -20,6 +20,13 @@ class Errors(Exception):
         if hasattr(self, 'error_message'):
             print(self.error_message)
         traceback.print_tb(sys.exc_info()[2])
+
+    def error_handler(self):
+        """
+        This function is used to properly handle an ERROR exception, printing all the informations necessary to the users (including the eventual PyVISA
+        internal error number and message). After having done this, it prints also the error traceback and stops script execution calling sys.exit() method.
+        """
+        self.warning_handler()
         sys.exit()
 
 class ManagerErrors(Errors):
