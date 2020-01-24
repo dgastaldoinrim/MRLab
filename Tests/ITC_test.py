@@ -1,6 +1,6 @@
 import time
-import Manager
-import OxfordITC
+from OxfordMagLab2000.General import Manager
+from OxfordMagLab2000.OxfordCryostat import OxfordITC
 
 rm = Manager.Manager()
 ITC = OxfordITC.OxfordITC(rm, GPIB_adress='GPIB0::24::INSTR')

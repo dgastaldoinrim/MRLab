@@ -1,5 +1,4 @@
-import Errors
-import Cryostat
+from ..General import Cryostat,Errors
 
 class OxfordITC(Cryostat.Cryostat):
     """

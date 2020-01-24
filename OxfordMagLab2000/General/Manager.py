@@ -1,5 +1,5 @@
 import pyvisa as visa
-import Errors
+from ..General import Errors
 
 class Manager:
     """

@@ -1,4 +1,4 @@
-import Errors
+from ..General import Errors
 
 class Instruments:
     def __init__(self, manager_int, adress_int, read_terminator_int = None, write_terminator_int = 'CRLF', end_or_identify_int = True):
@@ -227,7 +227,7 @@ class Instruments:
             raise
 
 #Test script (only to be run when the class is running as a standalone)
-import Manager
+from ..General import Manager
 
 if __name__ == '__main__':
     rm = Manager.Manager()

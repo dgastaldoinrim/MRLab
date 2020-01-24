@@ -1,4 +1,4 @@
-import Errors
+from ..General import Errors
 
 class Cryostat():
     """
