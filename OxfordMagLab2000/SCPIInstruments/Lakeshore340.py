@@ -1,5 +1,4 @@
-import Instruments
-import Errors
+from ..General import Instruments,Errors
 
 class Lakeshore340(Instruments.Instruments):
     """

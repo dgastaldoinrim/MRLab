@@ -1,6 +1,6 @@
 import time
-import Manager
-import OxfordILM
+from OxfordMagLab2000.General import Manager
+from OxfordMagLab2000.OxfordCryostat import OxfordILM
 
 rm = Manager.Manager()
 ILM = OxfordILM.OxfordILM(rm, GPIB_adress='GPIB0::25::INSTR', ISOBUS_master=False, ISOBUS_linked=True, ISOBUS_adress=5)

@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MRLab",
-    "\\Test"
+    "\\OxfordMagLab2000",
+    "\\OxfordMagLab2000\\General",
+    "\\OxfordMagLab2000\\KeythleyInstruments",
+    "\\OxfordMagLab2000\\OxfordCryostat",
+    "\\OxfordMagLab2000\\SCPIInstruments",
+    "\\Tests"
   ],
+  "SelectedNode": "\\OxfordMagLab2000\\__init__.py",
   "PreviewInSolutionExplorer": false
 }

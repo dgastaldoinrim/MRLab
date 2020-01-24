@@ -1,5 +1,4 @@
-import Instruments
-import Errors
+from ..General import Errors,Instruments
 
 class Keithley2182(Instruments.Instruments):
     """
