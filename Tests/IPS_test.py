@@ -1,6 +1,6 @@
 import time
-import Manager
-import OxfordIPS
+from OxfordMagLab2000.General import Manager
+from OxfordMagLab2000.OxfordCryostat import OxfordIPS
 
 rm = Manager.Manager()
 IPS = OxfordIPS.OxfordIPS(rm, GPIB_adress='GPIB0::25::INSTR', ISOBUS_master=True)
