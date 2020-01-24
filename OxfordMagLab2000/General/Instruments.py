@@ -225,25 +225,3 @@ class Instruments:
         except Errors.InvalidTypeDictionaryError as error:
             error.error_handler()
             raise
-
-#Test script (only to be run when the class is running as a standalone)
-from ..General import Manager
-
-if __name__ == '__main__':
-    rm = Manager.Manager()
-    sourcemeter = Instruments(rm, 'GPIB0::24::INSTR')
-    print(type(sourcemeter))
-    print(sourcemeter.manager)
-    print(sourcemeter.adress)
-    print(sourcemeter.instrument)
-    print(sourcemeter.identity)
-    sourcemeter.close()
-    electrometer = Instruments(rm, 'GPIB0::27::INSTR')
-    print(type(electrometer))
-    print(electrometer.manager)
-    print(electrometer.adress)
-    print(electrometer.instrument)
-    print(electrometer.identity)
-    electrometer.close()
-#This last command is used in order to verify the InstrumentNotAvailableError raising.
-    notaninstrument = Instruments(rm, 'adress')

@@ -87,16 +87,3 @@ class Keithley2182(Instruments.Instruments):
         except (Errors.ReportInstrumentInternalError, Errors.IncorrectInstrumentError) as error:
             error.error_handler()
             raise
-
-##Test script (only to be run when the class is running as a standalone)
-#import Manager
-
-#if __name__ == '__main__':
-#    rm = Manager.Manager()
-#    nanovoltmeter = Keithley2182(rm, 'GPIB0::2::INSTR')
-#    print(type(nanovoltmeter))
-#    print(nanovoltmeter.manager)
-#    print(nanovoltmeter.adress)
-#    print(nanovoltmeter.instrument)
-#    print(nanovoltmeter.identity)
-#    nanovoltmeter.close()

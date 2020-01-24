@@ -72,19 +72,3 @@ class Manager:
                     raise Errors.InstrumentNotAvailableError            
         except Errors.InstrumentNotAvailableError as error:
             error.error_handler()
-
-#Test script (only to be run when the class is running as a standalone)
-if __name__ == '__main__':
-    rm = Manager()
-    print(rm)
-    print(type(rm))
-#    print(rm.manager)
-#    print(rm.resources)
-#    sourcemeter = rm.open_instrument('GPIB0::23::INSTR')
-#    print(sourcemeter.query('*IDN?'))
-#    sourcemeter.close()
-#    electrometer = rm.open_instrument('GPIB0::27::INSTR')
-#    print(electrometer.query('*IDN?'))
-#    electrometer.close()
-##This last command is used in order to verify the InstrumentNotAvailableError raising.
-#    notaninstrument = rm.open_instrument('adress')
